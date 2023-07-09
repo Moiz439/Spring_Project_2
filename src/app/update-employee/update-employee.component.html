@@ -1,0 +1,43 @@
+<div class="col-md-6 offset-md-3">
+    <br>
+    
+    <h3>Update Employee</h3>
+    
+    <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+    <label>Employee ID:</label>
+    <input type="text" class="form-control" id="eid"
+     [(ngModel)]="employee.dtoeid" name="eid" readonly>
+    </div>
+    
+    <div class="form-group">
+        <label>Employee Name:</label>
+        <input type="text" class="form-control" id="ename"
+         [(ngModel)]="employee.dtoename" name="ename">
+        </div>
+    
+    
+        <div class="form-group">
+            <label>Email:</label>
+            <input type="text" class="form-control" id="email"
+             [(ngModel)]="employee.dtoemail" name="email">
+            </div>
+        
+            <div class="form-group">
+                <label>Salary:</label>
+                <input type="text" class="form-control" id="salary"
+                 [(ngModel)]="employee.dtosalary" name="salary">
+                </div>
+
+                <div class="form-group">
+                    <label>Designation:</label>
+                    <input type="text" class="form-control" id="des"
+                     [(ngModel)]="employee.dtodes" name="des">
+                    </div>
+    <br>
+    <button class="btn btn-success" type="submit">submit</button>
+    <br><br>
+    </form>
+    
+    </div>
+    
